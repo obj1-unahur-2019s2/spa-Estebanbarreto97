@@ -1,0 +1,21 @@
+import spa.*
+import personas.*
+
+test "test ramiro" {
+
+	spa.atender(ramiro)
+	assert.that(ramiro.contractura() == 0)
+	assert.notThat(ramiro.tieneGrasaEnLaPiel())
+
+}
+
+test "test bruno" {
+	spa.atender(bruno)
+	assert.that(bruno.tieneSed())
+	assert.that(bruno.esFeliz())
+}
+
+test "test olivia" {
+	spa.atender(olivia)
+	assert.that(olivia.gradoDeConcentracion() > 0)
+}
